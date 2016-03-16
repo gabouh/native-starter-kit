@@ -33,17 +33,26 @@ $ cd native-starter-kit/
 $ npm install 
 ```
 
-####4.1. To Run the project using XCode
+####4. Simulate for iOS
 
-Open the project in XCode from ios/NativeStarter.xcodeproj
+*	**To Run the project using XCode**
 
-Hit the play button (&#8984; + R)
+	*	Open the project in XCode from ios/NativeStarter.xcodeproj
+
+	*	Hit the play button (&#8984; + R)
 
 
-####4.2. To Run the project from Terminal
+*	**To Run the project from Terminal**
+
+	```sh
+	$ react-native run-ios
+	```
+
+####5. Simulate for Android
+
+Run the following command from terminal
 
 ```sh
-$ react-native run-ios
+$ react-native run-android
 ```
-
 
