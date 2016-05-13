@@ -1,4 +1,4 @@
-## Native Starter - Starter Kit for React Native Apps (iOS and Android)
+## Native Starter - Starter Kit for React Native Apps (iOS & Android)
 
 [![Join the chat at https://gitter.im/start-react/native-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-react/native-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
