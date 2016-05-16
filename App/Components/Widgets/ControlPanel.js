@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
+import React from 'react';
+import {Component, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 import controlPanel from '../../Styles/controlPanel';
 import ButtonRounded from './ButtonRounded';
 import {Actions} from 'react-native-router-flux';

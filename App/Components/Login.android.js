@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, TextInput, View, Image, BackAndroid} from 'react-native';
+import React from 'react';
+import {Component, TextInput, View, Image, BackAndroid} from 'react-native';
 import styles from '../Styles/style';
 import login from '../Styles/login';
 import ButtonRounded from './Widgets/ButtonRounded';

@@ -9,7 +9,7 @@ var {
 
 module.exports = StyleSheet.create({
 	navbar: {
-		minHeight: 70
+		height: 70
 	},
 	
 	title : {

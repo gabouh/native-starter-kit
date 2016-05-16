@@ -4,10 +4,9 @@
  */
 
 'use strict';
-import React, {
-    AppRegistry,
-    Component
-} from 'react-native';
+
+import React from 'react';
+import { AppRegistry, Component } from 'react-native';
 
 import RootRouter from './App/Components/RootRouter';
 

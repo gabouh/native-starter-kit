@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, View} from 'react-native';
+import React from 'react';
+import {Component, View} from 'react-native';
 import Navbar from './Widgets/Navbar';
 import account from '../Styles/account';
 import {brandPrimary as primary} from '../Styles/variable';

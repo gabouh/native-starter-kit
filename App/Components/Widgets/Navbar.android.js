@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, Text, View} from 'react-native';
+import React from 'react';
+import {Component, Text, View} from 'react-native';
 import ToolbarAndroid from 'ToolbarAndroid';
 import {brandPrimary as primary} from '../../Styles/variable';
 import AppEventEmitter from '../../Services/AppEventEmitter';

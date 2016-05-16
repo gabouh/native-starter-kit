@@ -4,14 +4,12 @@
  */
 
 'use strict';
-import React, {
-    AppRegistry,
-    Component,
-    StatusBarIOS
-} from 'react-native';
+
+import React from 'react';
+import { AppRegistry, Component, StatusBar } from 'react-native';
 
 import RootRouter from './App/Components/RootRouter';
-StatusBarIOS.setStyle('light-content');
+StatusBar.setBarStyle('light-content');
 
 class NativeStarter extends Component {
     render() {

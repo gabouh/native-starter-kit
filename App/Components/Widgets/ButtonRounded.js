@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, Text, View, TouchableHighlight } from 'react-native';
+import React from 'react';
+import {Component, Text, View, TouchableHighlight } from 'react-native';
 import styles from '../../Styles/button';
 import {brandPrimary as primary} from '../../Styles/variable';
 

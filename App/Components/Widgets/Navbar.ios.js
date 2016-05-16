@@ -1,7 +1,8 @@
 /* @flow */
 'use strict';
 
-import React, {Component, Text, View, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {Component, Text, View, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import navbarStyle from './../../Styles/navbar.js';
 import {brandPrimary as primary} from '../../Styles/variable';
