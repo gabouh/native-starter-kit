@@ -1,23 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
 'use strict';
 
-import React from 'react';
-import { AppRegistry, Component, StatusBar } from 'react-native';
+import { AppRegistry, StatusBarIOS } from 'react-native'
+import setup from './js/setup'
 
-import RootRouter from './App/Components/RootRouter';
-StatusBar.setBarStyle('light-content');
-
-class NativeStarter extends Component {
-    render() {
-        return (
-            <RootRouter />
-        );
-    }
-}
-
-AppRegistry.registerComponent('NativeStarter', () => NativeStarter);
-
+StatusBarIOS.setStyle('light-content');
+AppRegistry.registerComponent('NativeStarterKit', setup);
