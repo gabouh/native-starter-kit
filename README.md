@@ -40,7 +40,7 @@ $ rnpm link
 
 *	Click **"+"** underneath the **"Link Binary With Libraries"** list and select the **libz.tbd** library underneath the iOS node that matches your target version.
 
-![CodePush-plugin-installation](/Screenshots/codepush-plugin-installation)
+![CodePush-plugin-installation](/Screenshots/codepush-plugin-installation.png)
 
 ####4. Simulate for iOS
 
