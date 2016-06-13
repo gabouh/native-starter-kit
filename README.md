@@ -35,11 +35,12 @@ $ rnpm link
 ```
 
 [CodePush](https://github.com/Microsoft/react-native-code-push) plugin installation:
-	*	Go to **"Build Phases"** tab of your project configuration.
 
-	*	Click **"+"** underneath the **"Link Binary With Libraries"** list and select the **libz.tbd** library underneath the iOS node that matches your target version.
+*	Go to **"Build Phases"** tab of your project configuration.
 
-	![CodePush-plugin-installation](/Screenshots/codepush-plugin-installation)
+*	Click **"+"** underneath the **"Link Binary With Libraries"** list and select the **libz.tbd** library underneath the iOS node that matches your target version.
+
+![CodePush-plugin-installation](/Screenshots/codepush-plugin-installation)
 
 ####4. Simulate for iOS
 
