@@ -1,7 +1,4 @@
-/**
- * Created by kylefang on 4/27/16.
- * @flow
- */
+/* @flow */
 
 'use strict';
 import AppNavigator from './AppNavigator';

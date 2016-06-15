@@ -1,7 +1,4 @@
-/**
- * Created by kylefang on 4/30/16.
- * @flow
- */
+/* @flow */
 
 'use strict';
 import type {Action} from './types';
@@ -12,25 +9,25 @@ export const ENABLE_DRAWER = "ENABLE_DRAWER";
 export const DISABLE_DRAWER = "DISABLE_DRAWER";
 
 export function openDrawer():Action {
-  return {
-    type: OPEN_DRAWER
-  }
+    return {
+        type: OPEN_DRAWER
+    }
 }
 
 export function closeDrawer():Action {
-  return {
-    type: CLOSE_DRAWER
-  }
+    return {
+        type: CLOSE_DRAWER
+    }
 }
 
 export function enableDrawer():Action {
-  return {
-    type: ENABLE_DRAWER
-  }
+    return {
+        type: ENABLE_DRAWER
+    }
 }
 
 export function disableDrawer():Action {
-  return {
-    type: DISABLE_DRAWER
-  }
+    return {
+        type: DISABLE_DRAWER
+    }
 }

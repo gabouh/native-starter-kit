@@ -2,18 +2,22 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Actions} from 'react-native-router-flux';
 
-import {openDrawer} from '../../actions/drawer';
 import {Container, Header, Title, Button, Icon } from 'native-base';
+import {openDrawer} from '../../actions/drawer';
+import {popRoute} from '../../actions/route';
 
 class BlankPage extends Component {
+
+    popRoute() {
+        this.props.popRoute();
+    }
 
     render() {
         return (
             <Container style={{backgroundColor: '#565051'}}>
                 <Header style={{backgroundColor: '#322A2A'}} foregroundColor="#fff">
-                    <Button transparent onPress={() => Actions.pop()}>
+                    <Button transparent onPress={() => this.popRoute()}>
                         <Icon name="ios-arrow-back" />
                     </Button>
                     
@@ -30,7 +34,8 @@ class BlankPage extends Component {
 
 function bindAction(dispatch) {
     return {
-        openDrawer: ()=>dispatch(openDrawer())
+        openDrawer: ()=>dispatch(openDrawer()),
+        popRoute: () => dispatch(popRoute())
     }
 }
 

@@ -7,41 +7,44 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import _ from 'lodash/core';
-import {Scene, Router, TabBar, Schema, Actions, Reducer} from 'react-native-router-flux';
 import {Drawer} from 'native-base';
 import {BackAndroid} from 'react-native';
 import {closeDrawer} from './actions/drawer';
+import Navigator from 'Navigator';
 
 import Login from './components/login/';
 import Home from './components/home/';
 import SideBar from './components/sideBar';
 import BlankPage from './components/blankPage/';
 
+export var globalNav = {};
+
 const searchResultRegexp = /^search\/(.*)$/;
 
 const reducerCreate = params=>{
     const defaultReducer = Reducer(params);
     return (state, action)=>{
-        console.log("ACTION:", action);
         var currentState = state;
 
         if(currentState){
-          while (currentState.children){
-            currentState = currentState.children[currentState.index]
-          }
+            while (currentState.children){
+                currentState = currentState.children[currentState.index]
+            }
         }
-        
         return defaultReducer(state, action);
     }
 };
 
 const drawerStyle  = { shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3};
+
 class AppNavigator extends Component {
+
     constructor(props){
         super(props);
     }
 
     componentDidMount() {
+        globalNav.navigator = this._navigator;
         this.props.store.subscribe(() => {
             console.log("store changed", this.props.store.getState());
             if(this.props.store.getState().drawer.drawerState == 'opened')
@@ -51,10 +54,21 @@ class AppNavigator extends Component {
                 this._drawer.close()
         });
 
-        BackAndroid.addEventListener('hardwareBackPress', function() {
-            Actions.pop();
-            return true;
+        BackAndroid.addEventListener('hardwareBackPress', () => {
+            var routes = this._navigator.getCurrentRoutes();
+
+            if(routes[routes.length - 1].id == 'home' || routes[routes.length - 1].id == 'login') {
+                return false;
+            }
+            else {
+                this.popRoute();
+                return true;
+            }
         });
+    }
+
+    popRoute() {
+        this.props.popRoute();
     }
 
     openDrawer() {
@@ -73,38 +87,50 @@ class AppNavigator extends Component {
             <Drawer
                 ref={(ref) => this._drawer = ref}
                 type="overlay"
-                content={<SideBar />}
+                content={ <SideBar navigator={this._navigator} /> }
                 tapToClose={true}
                 acceptPan={false}
                 onClose={() => this.closeDrawer()}
                 openDrawerOffset={0.2}
                 panCloseMask={0.2}
                 negotiatePan={true}>
-                <Router createReducer={reducerCreate} >
-                    <Scene key="root" hideNavBar={true} >
-                        <Scene key="login" type="reset" component={Login} title="Login" />
-                        <Scene key="home" type="replace" component={Home} title="Home" />
-                        <Scene key="blankPage" component={BlankPage} title="BlankPage" />
-                    </Scene>
-                </Router>
+                <Navigator
+                    ref={(ref) => this._navigator = ref}
+                    configureScene={(route) => {
+                        return Navigator.SceneConfigs.FloatFromRight;
+                    }}
+                    initialRoute={{id: 'login'}}
+                    renderScene={this.renderScene}
+                />
             </Drawer>
         );
+    }
 
-
+    renderScene(route, navigator) {
+        switch (route.id) {
+            case 'login':
+                return <Login navigator={navigator} />;
+            case 'home':
+                return <Home navigator={navigator} />;
+            case 'blankPage':
+                return <BlankPage navigator={navigator} />;
+            default :
+                return <Login navigator={navigator}  />;
+        }
     }
 }
 
 function bindAction(dispatch) {
     return {
-        closeDrawer: () => dispatch(closeDrawer())
+        closeDrawer: () => dispatch(closeDrawer()),
+        popRoute: () => dispatch(popRoute())
     }
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
-  return {
-    drawerState: state.drawer.drawerState
-  }
+    return {
+        drawerState: state.drawer.drawerState
+    }
 }
 
 export default connect(mapStateToProps, bindAction) (AppNavigator);

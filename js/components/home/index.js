@@ -2,19 +2,23 @@
 
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Actions} from 'react-native-router-flux';
 
-import {openDrawer} from '../../actions/drawer';
 import {Container, Header, Title, Content, Text, Button, Icon } from 'native-base';
+import {openDrawer} from '../../actions/drawer';
+import {replaceRoute} from '../../actions/route';
 import styles from './styles';
 
 class Home extends Component {
+
+    replaceRoute(route) {
+        this.props.replaceRoute(route);
+    }
 
     render() {
         return (
             <Container style={{backgroundColor: '#565051'}}>
                 <Header style={{backgroundColor: '#322A2A'}} foregroundColor="#fff" >
-                    <Button transparent onPress={() => Actions.login()}>
+                    <Button disabled transparent>
                         <Icon name="ios-arrow-back" />
                     </Button>
                     
@@ -29,7 +33,7 @@ class Home extends Component {
                     <Text style={styles.text}>Welcome!</Text>
                     <Text style={styles.text}>Native Starter Free Version!</Text>
                     
-                    <Button style={styles.text} onPress={() => Actions.login()}>
+                    <Button style={styles.text} onPress={() => this.replaceRoute('login')}>
                         Logout
                     </Button>
                 </Content>
@@ -40,7 +44,8 @@ class Home extends Component {
 
 function bindAction(dispatch) {
     return {
-        openDrawer: ()=>dispatch(openDrawer())
+        openDrawer: ()=>dispatch(openDrawer()),
+        replaceRoute:(route)=>dispatch(replaceRoute(route))
     }
 }
 

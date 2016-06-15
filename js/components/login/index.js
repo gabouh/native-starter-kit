@@ -4,9 +4,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { DeviceEventEmitter, Dimensions, Image} from 'react-native';
-import {Actions} from 'react-native-router-flux';
 
 import {Container, Content, InputGroup, Input, Button, Icon, View } from 'native-base';
+import {replaceRoute} from '../../actions/route';
 import theme from '../../themes/base-theme';
 import styles from './styles';
 
@@ -33,6 +33,10 @@ class Login extends Component {
         this.setState({scroll: false})
     }
 
+    replaceRoute(route) {
+        this.props.replaceRoute(route);
+    }
+
     render() {
         return (
             <Container theme={theme}>
@@ -51,7 +55,7 @@ class Login extends Component {
                                         secureTextEntry={true}
                                     />
                                 </InputGroup>
-                                <Button style={{marginTop: 20, alignSelf: 'center'}} textStyle={{color: '#fff'}} onPress={() => Actions.home()}>
+                                <Button style={{marginTop: 20, alignSelf: 'center'}} textStyle={{color: '#fff'}} onPress={() => this.replaceRoute('home')}>
                                     Login
                                 </Button>
                             </View>
@@ -63,4 +67,10 @@ class Login extends Component {
     }
 }
 
-export default (Login);
+function bindActions(dispatch){
+    return {
+        replaceRoute:(route)=>dispatch(replaceRoute(route))
+    }
+}
+
+export default connect(null, bindActions)(Login);
