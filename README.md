@@ -19,7 +19,7 @@ This is a starter kit that you can install on the fly to get the basic plumping 
 -	[Screens](#screens)
 -	[Technologies](#technologies)
 -	[Installation](#installation)
--	[Featured Apps - Native Starter Pro](#featured-apps-native-starter-pro)
+-	[Featured Apps - Native Starter Pro](#featured-apps---native-starter-pro)
 
 
 ## Screens
