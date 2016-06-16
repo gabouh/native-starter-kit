@@ -10,9 +10,6 @@
 
 Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
 
-**Add brief intro**
-
-
 # Content
 
 -	[Screens](#screens)
@@ -23,9 +20,9 @@ Find out more [Free React.js and React Native Themes at StartReact.com](http://w
 
 ## Screens
 
-| iOS | Android |
-| :--:| :-----: |
-| ![iOS-demo](/Screenshots/iOS-demo.gif) | ![android-demo](/Screenshots/android-demo.gif) |
+ iOS | Android 
+ :--:| :-----: 
+ ![iOS-demo](/Screenshots/iOS-demo.gif) | ![android-demo](/Screenshots/android-demo.gif) 
 
 
 
