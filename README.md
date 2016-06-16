@@ -1,8 +1,8 @@
-## Native Starter - Starter Kit for React Native + NativeBase + Redux Apps (iOS & Android)
+## Native Starter - Starter Kit for [React Native](https://facebook.github.io/react-native/docs/getting-started.html) + [NativeBase](http://nativebase.io/) + [Redux](http://redux.js.org) Apps (iOS & Android)
 
 [![Join the chat at https://gitter.im/start-react/native-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-react/native-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is a simple starter project for React Native + NativeBase + Redux apps on iOS and Android.
+This is a simple starter project for [React Native](https://facebook.github.io/react-native/docs/getting-started.html) + [NativeBase](http://nativebase.io/) + [Redux](http://redux.js.org) + [React Native Navigator](https://facebook.github.io/react-native/docs/navigator.html) apps on iOS and Android.
 
 Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
 
