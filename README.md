@@ -8,14 +8,18 @@
 
 #### A simple starter project for [React Native](https://facebook.github.io/react-native/docs/getting-started.html) + [NativeBase](http://nativebase.io/) + [Redux](http://redux.js.org) + [React Native Navigator](https://facebook.github.io/react-native/docs/navigator.html) apps on iOS and Android.
 
-Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
+No need of reinventing the wheel. To have immediately something to continue building on, it would be best to start from some starter kit for getting React Native - based applications off the ground in a hurry. 
+
+This is a starter kit that you can install on the fly to get the basic plumping of React Native with NativeBase, Redux and CodePush. 
+
+*Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).*
 
 # Content
 
 -	[Screens](#screens)
 -	[Technologies](#technologies)
 -	[Installation](#installation)
--	[Native Starter Pro](#native-starter-pro)
+-	[Featured Apps](#featured-apps-native-starter-pro)
 
 
 ## Screens
@@ -25,12 +29,10 @@ Find out more [Free React.js and React Native Themes at StartReact.com](http://w
  ![iOS-demo](/Screenshots/iOS-demo.gif) | ![android-demo](/Screenshots/android-demo.gif) 
 
 
-
 ## Technologies
 *Technologies used in Native Starter Kit*
 
 ### [React Native](https://github.com/facebook/react-native)
-
 React Native helps in making the development work easier and allowing the developers to focus on the core app features in every new release. It is the fastest-developing mobile app development that essentially permits you to create an isolated product with often outcomes.
 
 **The hymn of React Native — learn once, write anywhere.**
@@ -120,27 +122,44 @@ Run the following command from terminal
 $ react-native run-android
 ```
 
-## Native Starter Pro
-Having tried with the free version, Native-Starter-Kit and appreciate our product?
+## Featured Apps - Native Starter Pro
+Having tried with the free version, Native Starter Kit and appreciate our product?
 
-Get on the mobile fast track with [Native Starter Pro](http://strapmobile.com/native-starter-pro/),  to build high-quality iOS and Android mobile apps. Based on [React Native](https://facebook.github.io/react-native/), Native Starter Pro is a beautifully designed, responsive iOS and Android app source code to quickly get started on your next project. Native Starter Pro is a bold and flexible React Native theme, built using [NativeBase](http://nativebase.io/documentation) and [Redux](https://github.com/reactjs/react-redux) which is best suited for developing apps that makes use of ready-made tools. The theme has several widget areas that allows you to extend your theme functionality with plugins. 
+Get on the mobile fast track with [Native Starter Pro](http://strapmobile.com/native-starter-pro/), to build high-quality iOS and Android mobile apps. 
+
+Based on [React Native](https://facebook.github.io/react-native/) and [NativeBase](http://nativebase.io/docs/v0.4.6/), Native Starter Pro is a beautifully designed, responsive iOS and Android app source code to quickly get started on your next project. 
+
+Native Starter Pro is a flexible React Native theme, built using [NativeBase](http://nativebase.io/documentation) and [Redux](https://github.com/reactjs/react-redux) with fusion of [ES6](http://es6-features.org/#Constants) which is best suited for developing apps that makes use of ready-made tools. The theme has several widget areas that allows you to extend your theme functionality with plugins. 
 
 Native Starter Pro includes following ready-to-use and highly customizable components :
-*	Button with various shapes and themes
-*	Textbox
-*	Form Elements
-*	List
-*	Header
-*	Footer
-*	Drawer
-*	Full fledged collection of Icons
-*	Spinner:Animated loading indicators which are flexible in diverse size and color
-*	ProgressBar: To visualize the process of work
-*	Modal: Smooth, fully customizable, imposing swipe down to close feature
-*	Ready to use Email Template
-*	Interactive design of Calendar with fast swiping feature
-*	Scroll between the tabs
-*	Responsive Navigator
-*	Chat Messenger
-*	[Read More](http://strapmobile.com/docs/native-starter-pro/v2.3/)
+
+-	Button with various shapes and themes
+-	Textbox
+-	Form Elements
+-	List
+-	Header
+-	Footer
+-	Drawer
+-	Full fledged collection of Icons
+-	Spinner:Animated loading indicators which are flexible in diverse size and color.
+-	ProgressBar: To visualize the process of work.
+-	Modal
+-	Ready to use Email Template
+-	Interactive design of Calendar with fast swiping feature.
+-	Scroll between the tabs
+-	Responsive Navigator
+-	Chat Messenger
+-	Ready to use screens
+-	Easy theme customization
+-	[Read More](http://strapmobile.com/docs/native-starter-pro/v3.0/)
+
+**Quick links to Native Starter Pro**
+
+-	*[Native Starter Pro Features](http://strapmobile.com/docs/native-starter-pro/v3.0/overview/whats-new-in-v3-0)*
+-	*[Native Starter Pro Components](http://strapmobile.com/docs/native-starter-pro/v3.0/components)*
+-	*[Native Starter Pro's App Generator](http://strapmobile.com/customizer/#/color)*
+-	*[Native Starter Pro Releases](http://strapmobile.com/native-starter-pro-releases/)*
+
+
+
 
